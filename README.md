@@ -66,6 +66,8 @@ With the end of this project, i think i learned quite a lot. The code is by no m
 
 It was a fun journey in my opnion.
 
+Obs: The reason this repository only has 5 commits is that i was implementing this in another private repository... The reason i don't place that one as public is that its a GIANT mess with all the bundles of codes i work on one project... Its not ideal and the make file is huge, but i find that fun to do so yea.
+
 ##### This project is free to use as it is, and is not expected to be updated any further in the future. Any errors, questions or suggestions, feel free to fork the project and adopt it. 
 
 
