@@ -1,15 +1,12 @@
 #include "InitializerManager.h"
 
 std::vector<Word> DictManager::obtainWordVector(std::string mainFilePath){
-	//Main File
 	std::vector<Word> wordVector;
 	std::vector<std::string> dictWords = FileOperations::obtainStringVector(mainFilePath);
 	std::vector<std::string> formattedDictWords = FormatOperators::formatVectorIntoPieces('|', dictWords);
 	for(int x = 0; x < formattedDictWords.size(); x += 3){
 		wordVector.emplace_back(formattedDictWords[x], formattedDictWords[x+1], formattedDictWords[x+2]);
 	}
-
-	std::cout << wordVector.size() << std::endl;
 	return wordVector;
 }
 

@@ -13,6 +13,7 @@ int main()
 	SpellChecker* spc = new SpellChecker(dict, 2);
 
 	while(true){
+		std::cout << "Type a word to check if its in the dictionary and the spell checking, type break to quit.\n >> ";
 		std::string word;
 		std::cin >> word;
 		std::vector<std::string> results = SCManager::callSpellChecker(spc, word);

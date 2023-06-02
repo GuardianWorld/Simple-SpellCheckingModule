@@ -73,6 +73,12 @@ std::vector<std::string> SpellChecker::search(std::string word){
     
     std::sort(suggestions.begin(), suggestions.end());
 
+    int numb = 0;
+    for(const auto s : suggestions){
+        std::cout << "Word Suggestion [" << numb << "]:" << s.second << " Weight: " << s.first << std::endl;
+        numb++;
+    }
+
     float mainWeight = suggestions[suggestions.size() - 1].first;
     int y = suggestions.size() - 1;
 
